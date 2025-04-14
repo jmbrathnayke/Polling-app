@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <div>
       <div>Polling app</div>
+  
     </div>
   )
 }
