@@ -6,6 +6,9 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
+//
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ limit: '10mb' })); // Increased limit for larger payload
 app.use(express.json());
 app.use(cors());
 
