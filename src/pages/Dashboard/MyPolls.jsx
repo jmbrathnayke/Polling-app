@@ -186,11 +186,12 @@ const MyPolls = () => {
                   </div>
 
                   <div className="flex justify-end mt-4">
-                    <button 
+                    <Link 
+                      to={`/poll/${poll.id}`}
                       className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
                     >
-                      View Results
-                    </button>
+                      View Poll
+                    </Link>
                   </div>
                 </div>
               );
